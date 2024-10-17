@@ -1,5 +1,6 @@
 import React from 'react';
 import Logo from "../assets/hairLogo.png"
+import { Link } from 'react-router-dom';
 
 function Navbar() {
     return (
@@ -32,25 +33,28 @@ function Navbar() {
                                 </a>
                             </li>
                             <li className='max-lg:border-b max-lg:py-3 px-3'>
-                                <a href='javascript:void(0)'
+                                <Link to='/'
                                     className='block font-bold text-[15px] relative text-black hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#f9a8d4] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#f9a8d4] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'>
                                     Home
-                                </a>
+                                </Link>
                             </li>
-                            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                            <li className='max-lg:border-b max-lg:py-3 px-3'>
+                                <Link to='/about'
                                 className='block font-bold text-[15px] relative text-black hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#f9a8d4] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#f9a8d4] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'>
                                 Team
-                            </a>
+                            </Link>
                             </li>
-                            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                            <li className='max-lg:border-b max-lg:py-3 px-3'>
+                                <Link to='/prices'
                                 className='block font-bold text-[15px] relative text-black hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#f9a8d4] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#f9a8d4] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'>
                                 Prezzi
-                            </a>
+                            </Link>
                             </li>
-                            <li className='max-lg:border-b max-lg:py-3 px-3'><a href='javascript:void(0)'
+                            <li className='max-lg:border-b max-lg:py-3 px-3'>
+                                <Link to='/contacts'
                                 className='block font-bold text-[15px] relative text-black hover:text-gray-400 cursor-pointer transition-all ease-in-out before:transition-[width] before:ease-in-out before:duration-700 before:absolute before:bg-[#f9a8d4] before:origin-center before:h-[1px] before:w-0 hover:before:w-[50%] before:bottom-0 before:left-[50%] after:transition-[width] after:ease-in-out after:duration-700 after:absolute after:bg-[#f9a8d4] after:origin-center after:h-[1px] after:w-0 hover:after:w-[50%] after:bottom-0 after:right-[50%]'>
                                 Contatti
-                            </a>
+                            </Link>
                             </li>
                         </ul>
                     </div>
